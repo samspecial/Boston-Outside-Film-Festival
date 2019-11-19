@@ -1,10 +1,10 @@
 
 
-.row.width{
-    background:grey;
+.row.width{  
     padding: 40px 15px;
-   color:white;
 }
+
+
 .col-12.col-md-12.col-lg-12.hero-align{
     padding:0;
 }
@@ -12,13 +12,14 @@ div.bg-dark.size{
     height: 56px;
     width:100%;
 }
-.btn.btn-success.center{
+.btn.btn-info{
     display:block;
-    text-align:center;
+    margin:0 auto;
 }
 .display-4{
-    font-size: 3.0rem;
-    font-weight: 900;
+    
+    font-size: 6.0rem;
+    font-weight: 700;
     line-height: 1.5;
     
 }
@@ -41,36 +42,65 @@ div.jumbotron-fluid.text-center{
     /* margin-top: 100px; */
 }
 
-.row.ticket{
+div.row.ticket{
     padding: 80px 0;
 }
 
+div.col-12.carousel{
+    padding:0;
+}
+
 .carousel-item{
-    height: 500px;
+    height: auto;
 
 } 
 .carousel-item img{
-    height: 500px;
+    height:auto;
     width:100%;
 }
 
 
-
-.card-img-top.matrix{
-    height:400px;
+.col-12.col-lg-4.card-group{
     transition: transform 1s ease-out 500ms;
+    text-align: justify;
+    
 }
 
-.card-img-top.matrix:hover{
-   
+
+/* FORM SECTION */
+
+div.col-12.col-md-6.form{
+    background: url('./img/form.jpg') center center/cover fixed;
+    padding: 20px 10px;
+}
+.col-12.col-lg-4.card-group:hover{
     transform: scale(1.03);
+}
+.card-img-top.matrix{
+    height:400px;
     
 }
 
 .card-img-top.update{
     height:200px;
 }
-
+/* 
 .container.pt-4.pb-4.news{
     padding: 80px 0;
+} */
+
+/* MEDIA QUERY */
+
+div.container.update{
+    
 }
+
+@media only screen and (min-width: 320px)  { h1{ font-size: 1.5rem; } h3{ font-size: 1.0rem;} .display-4{font-size:1.8rem;} div.row.ticket{
+    padding:15px 0;
+}}
+@media only screen and (min-width: 768px)  { h1{ font-size: 1.75rem; text-align: center;}  h3{ font-size: 1.5rem; } div.row.ticket{
+    padding:30px 0;} .display-4{font-size:2.3rem;} }
+@media only screen and (min-width: 1024px) { h1{ font-size: 2.0rem; text-align: center;}  h3{ font-size: 1.75rem; } div.row.ticket{
+    padding:50px 0;
+}}
+@media only screen and (min-width: 1900px) { h1{ font-size: 2.3rem; text-align: center;}  h3{ font-size: 2.0rem; }}
